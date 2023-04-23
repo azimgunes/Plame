@@ -1,0 +1,6 @@
+framework module Pods_Plame {
+  umbrella header "Pods-Plame-umbrella.h"
+
+  export *
+  module * { export * }
+}
