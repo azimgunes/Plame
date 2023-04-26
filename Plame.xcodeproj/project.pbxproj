@@ -15,6 +15,7 @@
 		3C3691D829EEE78D00DA1551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3691D629EEE78D00DA1551 /* Main.storyboard */; };
 		3C3691DD29EEE78F00DA1551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3691DB29EEE78F00DA1551 /* LaunchScreen.storyboard */; };
 		3CA1F65D29F4A0CB008B38A8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F65C29F4A0CB008B38A8 /* RegisterViewController.swift */; };
+		3CDD938629F94D3E00B6CBFA /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD938529F94D3E00B6CBFA /* PlacesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		3C3691DC29EEE78F00DA1551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C3691DE29EEE78F00DA1551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CA1F65C29F4A0CB008B38A8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3CDD938529F94D3E00B6CBFA /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
 		8352146D70C94B60F219B7CC /* Pods_Plame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9B07FA6D4C17E9C13F0A16 /* Pods-Plame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plame.debug.xcconfig"; path = "Target Support Files/Pods-Plame/Pods-Plame.debug.xcconfig"; sourceTree = "<group>"; };
 		D3254CF6A36070302766483D /* Pods-Plame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plame.release.xcconfig"; path = "Target Support Files/Pods-Plame/Pods-Plame.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				3C3691D029EEE78D00DA1551 /* AppDelegate.swift */,
 				3C3691D229EEE78D00DA1551 /* SceneDelegate.swift */,
+				3CDD938529F94D3E00B6CBFA /* PlacesVC.swift */,
 				3CA1F65C29F4A0CB008B38A8 /* RegisterViewController.swift */,
 				3C3691D429EEE78D00DA1551 /* ViewController.swift */,
 				3C3691D629EEE78D00DA1551 /* Main.storyboard */,
@@ -213,6 +216,7 @@
 				3C3691D129EEE78D00DA1551 /* AppDelegate.swift in Sources */,
 				3C3691D329EEE78D00DA1551 /* SceneDelegate.swift in Sources */,
 				3CA1F65D29F4A0CB008B38A8 /* RegisterViewController.swift in Sources */,
+				3CDD938629F94D3E00B6CBFA /* PlacesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

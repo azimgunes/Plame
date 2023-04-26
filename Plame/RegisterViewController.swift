@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class RegisterViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var topicLabel: UILabel!
     
+    @IBOutlet weak var usernameText: UITextField!
     
     @IBOutlet weak var mailText: UITextField!
     
@@ -55,9 +57,33 @@ class RegisterViewController: UIViewController {
     
     
     @IBAction func saveButton(_ sender: Any) {
+        if mailText.text != "" && passText.text != "" {
+             let user = PFUser()
+            user.username = usernameText.text!
+            user.password = passText.text!
+            user.email = mailText.text!
+            
+            user.signUpInBackground { success, error in
+                if error != nil {
+                    self.makeAlertRegister(titleInput: "Hata!", messageInput: error?.localizedDescription ?? "Hata!")
+                }else {
+                    //Segue
+                    self.performSegue(withIdentifier: "toViewController", sender: nil)
+                }
+            }
+        }else {
+            makeAlertRegister(titleInput: "HATA!", messageInput: "Bütün alanların doğru bir şekilde doldurulması zorunludur!")
+        }
     }
     
     @objc func imageTapped(){
         self.performSegue(withIdentifier: "toViewController", sender: nil)
 }
+    
+    func makeAlertRegister(titleInput: String, messageInput: String){
+        let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
+    }
 }
