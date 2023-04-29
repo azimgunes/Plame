@@ -26,6 +26,8 @@ class PlacesVC: UIViewController{
         
         navigationController?.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(title: "Çıkış Yap", style: UIBarButtonItem.Style.plain, target: self, action: #selector(logoutButton))
         
+        navigationController?.navigationBar.tintColor = .darkGray
+        
         // Do any additional setup after loading the view.
     }
     
@@ -44,7 +46,7 @@ class PlacesVC: UIViewController{
     
     
     @objc func addButton(){
-        //Segue
+        self.performSegue(withIdentifier: "toAddVC", sender: nil)
     }
  
     @objc func logoutButton(){
