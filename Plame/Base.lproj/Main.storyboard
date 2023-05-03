@@ -418,14 +418,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Onj-Kz-7KK">
-                                <rect key="frame" x="16" y="349" width="358" height="339"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Onj-Kz-7KK">
+                                <rect key="frame" x="0.0" y="112" width="390" height="621"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsz-4i-eQw">
-                                <rect key="frame" x="165" y="712" width="61" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsz-4i-eQw">
+                                <rect key="frame" x="165" y="751" width="61" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.8475380539894104" green="0.60246068239212036" blue="0.46500176191329956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
@@ -440,6 +438,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RVL-dU-ggE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RVL-dU-ggE" firstAttribute="bottom" secondItem="Vsz-4i-eQw" secondAttribute="bottom" constant="24" id="1gF-gb-C2D"/>
+                            <constraint firstItem="Onj-Kz-7KK" firstAttribute="top" secondItem="RVL-dU-ggE" secondAttribute="top" constant="21" id="Lo4-Jo-D6P"/>
+                            <constraint firstItem="Onj-Kz-7KK" firstAttribute="leading" secondItem="RVL-dU-ggE" secondAttribute="leading" id="PQd-2h-m7A"/>
+                            <constraint firstItem="Onj-Kz-7KK" firstAttribute="centerX" secondItem="Vsz-4i-eQw" secondAttribute="centerX" id="fmO-QD-o2s"/>
+                            <constraint firstItem="Onj-Kz-7KK" firstAttribute="centerX" secondItem="2gE-oz-yaY" secondAttribute="centerX" id="ids-Yf-WLj"/>
+                            <constraint firstItem="Vsz-4i-eQw" firstAttribute="leading" secondItem="RVL-dU-ggE" secondAttribute="leading" constant="165" id="lJm-eC-aVM"/>
+                            <constraint firstItem="Vsz-4i-eQw" firstAttribute="top" secondItem="Onj-Kz-7KK" secondAttribute="bottom" constant="18" id="m9c-AX-ey5"/>
+                            <constraint firstItem="Onj-Kz-7KK" firstAttribute="centerY" secondItem="2gE-oz-yaY" secondAttribute="centerY" id="ocv-hw-lSc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uSZ-Sp-bRT"/>
                     <connections>
