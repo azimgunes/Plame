@@ -55,7 +55,26 @@ class AddVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
     
     
     @IBAction func nextPageButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "toMapVC", sender: nil)
+        
+        if nameText.text != "" && typeText.text != "" && detailsText.text != "" {
+           
+            if let chosenImage = imageView.image {
+                let placeModel = PlaceModel.sharedInstance
+                placeModel.placeName = nameText.text!
+                placeModel.placeType = typeText.text!
+                placeModel.placeDetail = detailsText.text!
+                placeModel.placeImage = chosenImage
+                
+                
+            }
+            self.performSegue(withIdentifier: "toMapVC", sender: nil)
+
+        }else {
+            let alert = UIAlertController(title: "Hata!", message: "İsim/Tip/Detay?", preferredStyle: UIAlertController.Style.alert)
+            let okButton = UIAlertAction(title: "Tamam!", style: UIAlertAction.Style.default)
+            alert.addAction(okButton)
+            present(alert, animated: true)
+        }
     }
     
     @objc func chooseImage(){

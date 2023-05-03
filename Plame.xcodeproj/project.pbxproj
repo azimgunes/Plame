@@ -17,6 +17,7 @@
 		3C3691D529EEE78D00DA1551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3691D429EEE78D00DA1551 /* ViewController.swift */; };
 		3C3691D829EEE78D00DA1551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3691D629EEE78D00DA1551 /* Main.storyboard */; };
 		3C3691DD29EEE78F00DA1551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3691DB29EEE78F00DA1551 /* LaunchScreen.storyboard */; };
+		3C4BFE532A02E06B00CC1193 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BFE522A02E06B00CC1193 /* PlaceModel.swift */; };
 		3CA1F65D29F4A0CB008B38A8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F65C29F4A0CB008B38A8 /* RegisterViewController.swift */; };
 		3CDD938629F94D3E00B6CBFA /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD938529F94D3E00B6CBFA /* PlacesVC.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		3C3691D729EEE78D00DA1551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C3691DC29EEE78F00DA1551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C3691DE29EEE78F00DA1551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C4BFE522A02E06B00CC1193 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		3CA1F65C29F4A0CB008B38A8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3CDD938529F94D3E00B6CBFA /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
 		8352146D70C94B60F219B7CC /* Pods_Plame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 			children = (
 				3C3691D029EEE78D00DA1551 /* AppDelegate.swift */,
 				3C3691D229EEE78D00DA1551 /* SceneDelegate.swift */,
+				3C4BFE522A02E06B00CC1193 /* PlaceModel.swift */,
 				3C22034D29F97C1600F857D9 /* DetailsVC.swift */,
 				3C22034B29F975C300F857D9 /* MapVC.swift */,
 				3C22034929F9732600F857D9 /* AddVC.swift */,
@@ -228,6 +231,7 @@
 				3C3691D329EEE78D00DA1551 /* SceneDelegate.swift in Sources */,
 				3C22034C29F975C300F857D9 /* MapVC.swift in Sources */,
 				3CA1F65D29F4A0CB008B38A8 /* RegisterViewController.swift in Sources */,
+				3C4BFE532A02E06B00CC1193 /* PlaceModel.swift in Sources */,
 				3CDD938629F94D3E00B6CBFA /* PlacesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
