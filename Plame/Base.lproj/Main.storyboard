@@ -325,7 +325,7 @@
             <objects>
                 <viewController id="p36-Hi-vyF" customClass="AddVC" customModule="Plame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oe5-GY-4Hy">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nfy-ot-zB4">
@@ -415,7 +415,7 @@
             <objects>
                 <viewController id="GGV-VX-hJP" customClass="MapVC" customModule="Plame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2gE-oz-yaY">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Onj-Kz-7KK">
@@ -452,6 +452,7 @@
                     <navigationItem key="navigationItem" id="uSZ-Sp-bRT"/>
                     <connections>
                         <outlet property="mapView" destination="Onj-Kz-7KK" id="fvV-qP-P9h"/>
+                        <segue destination="bO9-cx-7qC" kind="presentation" identifier="fromMapVCtoPlacesVC" modalPresentationStyle="fullScreen" id="xqi-ZQ-LR4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTy-1u-0AV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -478,7 +479,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ad2-t7-Lt0"/>
+        <segue reference="eeO-bY-gCN"/>
+        <segue reference="xqi-ZQ-LR4"/>
+        <segue reference="zgR-oq-fBd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="scroll" width="200" height="200"/>
