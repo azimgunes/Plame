@@ -10,7 +10,6 @@
 		3463A2AE185DAC490F7E7323 /* Pods_Plame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8352146D70C94B60F219B7CC /* Pods_Plame.framework */; };
 		3C22034A29F9732600F857D9 /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C22034929F9732600F857D9 /* AddVC.swift */; };
 		3C22034C29F975C300F857D9 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C22034B29F975C300F857D9 /* MapVC.swift */; };
-		3C22034E29F97C1600F857D9 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C22034D29F97C1600F857D9 /* DetailsVC.swift */; };
 		3C27853429EF19C1002CC389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C27853329EF19C1002CC389 /* Assets.xcassets */; };
 		3C3691D129EEE78D00DA1551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3691D029EEE78D00DA1551 /* AppDelegate.swift */; };
 		3C3691D329EEE78D00DA1551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3691D229EEE78D00DA1551 /* SceneDelegate.swift */; };
@@ -20,12 +19,12 @@
 		3C4BFE532A02E06B00CC1193 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BFE522A02E06B00CC1193 /* PlaceModel.swift */; };
 		3CA1F65D29F4A0CB008B38A8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F65C29F4A0CB008B38A8 /* RegisterViewController.swift */; };
 		3CDD938629F94D3E00B6CBFA /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD938529F94D3E00B6CBFA /* PlacesVC.swift */; };
+		3CF71CB42A03DE9000471E70 /* DVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF71CB32A03DE9000471E70 /* DVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C22034929F9732600F857D9 /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
 		3C22034B29F975C300F857D9 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
-		3C22034D29F97C1600F857D9 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		3C27853329EF19C1002CC389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C3691CD29EEE78D00DA1551 /* Plame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3691D029EEE78D00DA1551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		3C4BFE522A02E06B00CC1193 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		3CA1F65C29F4A0CB008B38A8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3CDD938529F94D3E00B6CBFA /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
+		3CF71CB32A03DE9000471E70 /* DVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVC.swift; sourceTree = "<group>"; };
 		8352146D70C94B60F219B7CC /* Pods_Plame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9B07FA6D4C17E9C13F0A16 /* Pods-Plame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plame.debug.xcconfig"; path = "Target Support Files/Pods-Plame/Pods-Plame.debug.xcconfig"; sourceTree = "<group>"; };
 		D3254CF6A36070302766483D /* Pods-Plame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plame.release.xcconfig"; path = "Target Support Files/Pods-Plame/Pods-Plame.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 				3C3691D029EEE78D00DA1551 /* AppDelegate.swift */,
 				3C3691D229EEE78D00DA1551 /* SceneDelegate.swift */,
 				3C4BFE522A02E06B00CC1193 /* PlaceModel.swift */,
-				3C22034D29F97C1600F857D9 /* DetailsVC.swift */,
+				3CF71CB32A03DE9000471E70 /* DVC.swift */,
 				3C22034B29F975C300F857D9 /* MapVC.swift */,
 				3C22034929F9732600F857D9 /* AddVC.swift */,
 				3CDD938529F94D3E00B6CBFA /* PlacesVC.swift */,
@@ -225,7 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C22034A29F9732600F857D9 /* AddVC.swift in Sources */,
-				3C22034E29F97C1600F857D9 /* DetailsVC.swift in Sources */,
 				3C3691D529EEE78D00DA1551 /* ViewController.swift in Sources */,
 				3C3691D129EEE78D00DA1551 /* AppDelegate.swift in Sources */,
 				3C3691D329EEE78D00DA1551 /* SceneDelegate.swift in Sources */,
@@ -233,6 +232,7 @@
 				3CA1F65D29F4A0CB008B38A8 /* RegisterViewController.swift in Sources */,
 				3C4BFE532A02E06B00CC1193 /* PlaceModel.swift in Sources */,
 				3CDD938629F94D3E00B6CBFA /* PlacesVC.swift in Sources */,
+				3CF71CB42A03DE9000471E70 /* DVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

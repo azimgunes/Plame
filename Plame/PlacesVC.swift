@@ -14,6 +14,7 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var placeNameArray = [String]()
     var placeIdArray = [String]()
+    var selectedPlaceId = ""
     
     
     override func viewDidLoad() {
@@ -93,5 +94,16 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         let okButton = UIAlertAction(title: "Hata", style: UIAlertAction.Style.default)
         alert.addAction(okButton)
         self.present(alert, animated: true)
+    }
+   
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedPlaceId = placeIdArray[indexPath.row]
+        performSegue(withIdentifier: "toDVC", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toDVC") {
+            let desVC = segue.destination as! DVC
+            desVC.placeID = selectedPlaceId
+        }
     }
 }
