@@ -40,7 +40,7 @@ class DVC: UIViewController{
         
         let query = PFQuery(className: "Memories")
         query.whereKey("objectId", equalTo: placeID)
-        query.findObjectsInBackground { objects, error in
+        query.findObjectsInBackground { (objects, error) in
             if error != nil {
                 
             }else {

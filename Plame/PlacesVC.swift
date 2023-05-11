@@ -27,10 +27,11 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         backImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backImage, at: 0)
 
-        
-        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(addButton))
+        buttonItems()
+     //   navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(addButton))
         
         navigationController?.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(title: "Çıkış Yap", style: UIBarButtonItem.Style.plain, target: self, action: #selector(logoutButton))
+       // navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(title: "P", style: UIBarButtonItem.Style.done, target: self, action: #selector(profilePageSegue))
         
         navigationController?.navigationBar.tintColor = .darkGray
         
@@ -54,6 +55,7 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
+                
         cell.textLabel!.text = placeNameArray[indexPath.row]
         cell.backgroundColor = UIColor.clear
         cell.textLabel?.textColor = UIColor.black
@@ -105,5 +107,17 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
             let desVC = segue.destination as! DVC
             desVC.placeID = selectedPlaceId
         }
+    }
+    @objc func profilePageSegue(){
+        self.performSegue(withIdentifier: "toProfileVC", sender: nil)
+    }
+    
+    
+    private func buttonItems (){
+        navigationItem.rightBarButtonItems = [
+            
+            UIBarButtonItem(image: UIImage(systemName: "person.circle"), style: UIBarButtonItem.Style.done, target: self, action: #selector(profilePageSegue)),
+            UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(addButton))
+        ]
     }
 }
