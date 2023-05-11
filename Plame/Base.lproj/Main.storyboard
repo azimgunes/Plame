@@ -259,11 +259,53 @@
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toVC" modalPresentationStyle="fullScreen" id="zgR-oq-fBd"/>
                         <segue destination="p36-Hi-vyF" kind="show" identifier="toAddVC" id="eeO-bY-gCN"/>
                         <segue destination="a0d-iv-Ulv" kind="show" identifier="toDVC" id="GxV-qq-7u2"/>
+                        <segue destination="r8O-uM-Xfv" kind="show" identifier="toProfileVC" id="tFx-Ye-Izd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MRb-3e-W4g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2276.9230769230767" y="-29.14691943127962"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="TEi-ZB-CbI">
+            <objects>
+                <viewController id="r8O-uM-Xfv" customClass="ProfileVC" customModule="Plame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5lR-Le-h9P">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpT-GK-qH7">
+                                <rect key="frame" x="118" y="723" width="155" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Çıkış Yap!" cornerStyle="capsule">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.22519816942999085" green="0.5059951537433155" blue="0.48322947067211913" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logOut:" destination="r8O-uM-Xfv" eventType="touchUpInside" id="VKC-iy-H4K"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hoşgeldin!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaD-eZ-yU2">
+                                <rect key="frame" x="16" y="158" width="358" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="42"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UR4-7y-7y7"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IEI-ka-T99"/>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="kaD-eZ-yU2" id="GfJ-SI-vhu"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="fromPVCtoVC" modalPresentationStyle="fullScreen" id="s7f-KG-U6b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fzw-CN-B6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880" y="701.65876777251185"/>
         </scene>
         <!--DVC-->
         <scene sceneID="tjX-Vi-rWu">
@@ -318,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z3V-Dg-MZf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3113.8461538461538" y="701.65876777251185"/>
+            <point key="canvasLocation" x="2898" y="702"/>
         </scene>
         <!--AddVC-->
         <scene sceneID="ooX-qK-IC1">
@@ -464,6 +506,7 @@
             <objects>
                 <navigationController storyboardIdentifier="NavController" automaticallyAdjustsScrollViewInsets="NO" id="bO9-cx-7qC" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="DdA-Kq-0Gv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mix-hc-gzx">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -480,7 +523,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="9BE-C9-WSs"/>
-        <segue reference="zgR-oq-fBd"/>
+        <segue reference="s7f-KG-U6b"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="scroll" width="200" height="200"/>
