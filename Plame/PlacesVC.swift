@@ -115,8 +115,6 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     private func buttonItems (){
         navigationItem.rightBarButtonItems = [
-            
-            UIBarButtonItem(image: UIImage(systemName: "person.circle"), style: UIBarButtonItem.Style.done, target: self, action: #selector(profilePageSegue)),
             UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(addButton))
         ]
     }

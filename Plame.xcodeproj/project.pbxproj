@@ -17,7 +17,6 @@
 		3C3691D829EEE78D00DA1551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3691D629EEE78D00DA1551 /* Main.storyboard */; };
 		3C3691DD29EEE78F00DA1551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3691DB29EEE78F00DA1551 /* LaunchScreen.storyboard */; };
 		3C4BFE532A02E06B00CC1193 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BFE522A02E06B00CC1193 /* PlaceModel.swift */; };
-		3C5B62992A0D08BE00FA8298 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B62982A0D08BE00FA8298 /* ProfileVC.swift */; };
 		3CA1F65D29F4A0CB008B38A8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F65C29F4A0CB008B38A8 /* RegisterViewController.swift */; };
 		3CDD938629F94D3E00B6CBFA /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD938529F94D3E00B6CBFA /* PlacesVC.swift */; };
 		3CF71CB42A03DE9000471E70 /* DVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF71CB32A03DE9000471E70 /* DVC.swift */; };
@@ -35,7 +34,6 @@
 		3C3691DC29EEE78F00DA1551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C3691DE29EEE78F00DA1551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C4BFE522A02E06B00CC1193 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
-		3C5B62982A0D08BE00FA8298 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		3CA1F65C29F4A0CB008B38A8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3CDD938529F94D3E00B6CBFA /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
 		3CF71CB32A03DE9000471E70 /* DVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVC.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				3C4BFE522A02E06B00CC1193 /* PlaceModel.swift */,
 				3CF71CB32A03DE9000471E70 /* DVC.swift */,
 				3C22034B29F975C300F857D9 /* MapVC.swift */,
-				3C5B62982A0D08BE00FA8298 /* ProfileVC.swift */,
 				3C22034929F9732600F857D9 /* AddVC.swift */,
 				3CDD938529F94D3E00B6CBFA /* PlacesVC.swift */,
 				3CA1F65C29F4A0CB008B38A8 /* RegisterViewController.swift */,
@@ -227,7 +224,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C5B62992A0D08BE00FA8298 /* ProfileVC.swift in Sources */,
 				3C22034A29F9732600F857D9 /* AddVC.swift in Sources */,
 				3C3691D529EEE78D00DA1551 /* ViewController.swift in Sources */,
 				3C3691D129EEE78D00DA1551 /* AppDelegate.swift in Sources */,
