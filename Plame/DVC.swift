@@ -27,7 +27,7 @@ class DVC: UIViewController{
         super.viewDidLoad()
         
         let backImage = UIImageView(frame: UIScreen.main.bounds)
-        backImage.image = UIImage(named: "page")
+        backImage.image = UIImage(named: "otherpage")
         backImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backImage, at: 0)
         
